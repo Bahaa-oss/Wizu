@@ -1,0 +1,17 @@
+
+```python
+import openai
+
+# Set up your OpenAI API key
+openai.api_key = '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'  # Replace with your actual API key
+
+# Example to call the API
+response = openai.ChatCompletion.create(
+  model="gpt-4",
+  messages=[
+        {"role": "user", "content": "Hello, how can I use OpenAI?"}
+    ]
+)
+
+print(response.choices[0].message['content'])
+```
