@@ -52,24 +52,18 @@ pattern — this just swaps the destination to FB + IG and the content to evergr
 | Facebook Page posting | ✅ free — needs you to **authorize** (link below) |
 | Instagram posting | ✅ free — needs a **Business/Creator IG linked to a FB Page** + authorize |
 | Telegram cross-post | ✅ connection already exists |
-| **Branded visual (text on image)** | ⛔ **needs a paid image tool — pick one (below)** |
+| **Branded visual (text on image)** | ✅ **Templated.io free tier** (chosen) — see `make/visual-template.md` |
 
-### The one decision: the visual engine
+### The visual engine: Templated.io (chosen — free)
 
-Hands-off "headline text on a branded background" needs a paid renderer. Options:
+Hands-off "headline text on a branded background" is handled by **Templated.io** on its free
+tier ($0/mo, ~30 renders/month = one daily post). It's purpose-built for "text-on-template via
+API" and has a native Make module. Setup + template spec: **`make/visual-template.md`**.
 
-1. **Canva Pro (~$13/mo)** — you design the template visually; Make's *Autofill Brand
-   Template* fills today's text + exports PNG. Best brand control. *(Your goal "visual made
-   by Higgs Field" → Canva is the better fit since Higgs Field can't put clean text on
-   images.)*
-2. **Higgs Field Basic** — AI-art backgrounds (no reliable on-image text); not a native Make
-   app, so Make calls it over HTTP. Good for *backgrounds*, weak for educational text posts.
-3. **Free automation-native renderer** (Placid / Templated.io / Bannerbear free tier) —
-   $0, purpose-built for "text-on-template via API", native Make modules. Recommended if you
-   want zero monthly cost.
-
-Until one is chosen + connected, the scenario can run in **semi-auto mode**: it generates
-the caption + drops the topic into Telegram/Drive so you attach a visual and post manually.
+> Higgs Field (your original pick) and Canva both require a paid plan for automated image
+> generation, and Higgs Field can't reliably put clean text on an image — so a free
+> automation-native renderer is the better fit for educational text posts. The wiring is
+> identical for Bannerbear/Placid if you ever switch: each just returns a PNG URL.
 
 ---
 
