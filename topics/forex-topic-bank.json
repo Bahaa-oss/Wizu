@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "name": "Wizu Forex Education Topic Bank",
+    "description": "Daily educational forex posts for Facebook + Instagram. One topic is selected per day (day-of-year modulo number of topics) so the cycle repeats roughly every ~3 weeks. Edit, add, or reorder freely — this JSON is the single source of truth the Make scenario reads.",
+    "language": "Captions provided in English (caption_en) and Arabic (caption_ar). Pick one per channel, or post bilingual.",
+    "version": 1
+  },
+  "topics": [
+    {
+      "id": "liquidity-101",
+      "category": "Market Structure",
+      "title_en": "What is Liquidity in Forex?",
+      "title_ar": "ما هي السيولة في الفوركس؟",
+      "hook": "Why your order sometimes fills at a worse price than you clicked.",
+      "key_points": [
+        "Liquidity = how easily you can buy/sell without moving the price.",
+        "High liquidity (EUR/USD, London/NY sessions) = tight spreads, fast fills.",
+        "Low liquidity (exotic pairs, news, rollover) = wide spreads + slippage.",
+        "Liquidity providers (banks) quote the prices your broker passes on."
+      ],
+      "caption_en": "💧 LIQUIDITY — the invisible force behind every fill.\n\nLiquidity is simply how easily you can enter or exit a trade without moving the price against yourself.\n\n• High liquidity → tight spreads, instant fills (think EUR/USD during London–New York overlap).\n• Low liquidity → wide spreads + slippage (exotic pairs, news spikes, Friday rollover).\n\nThe big banks (\"liquidity providers\") are the ones actually quoting these prices — your broker just passes them to you. Trade the liquid hours and you keep more of your edge.\n\nWhich session do you trade? 👇",
+      "caption_ar": "💧 السيولة — القوة الخفية وراء كل صفقة.\n\nالسيولة ببساطة هي مدى سهولة دخولك أو خروجك من الصفقة دون أن يتحرك السعر ضدك.\n\n• سيولة عالية ← سبريد ضيّق وتنفيذ فوري (مثل اليورو/دولار وقت تداخل لندن ونيويورك).\n• سيولة منخفضة ← سبريد واسع وانزلاق سعري (الأزواج النادرة، وقت الأخبار، تبييت الجمعة).\n\nالبنوك الكبرى (مزوّدو السيولة) هم من يسعّر فعليًا، ووسيطك ينقل لك السعر فقط. تداول في ساعات السيولة العالية لتحافظ على أفضليتك.\n\nأي جلسة تتداول فيها؟ 👇",
+      "hashtags": ["#forex", "#forextrading", "#liquidity", "#tradingeducation", "#فوركس", "#تداول"],
+      "visual_prompt": "Clean modern fintech infographic, deep navy and gold palette, abstract glowing streams of currency flowing into a central pool representing market liquidity, faint candlestick chart in background, lots of empty space at top for a headline, premium minimal design, no text"
+    },
+    {
+      "id": "a-book-broker",
+      "category": "Broker Models",
+      "title_en": "A-Book Brokers Explained",
+      "title_ar": "شرح وسطاء A-Book",
+      "hook": "When your broker WANTS you to win.",
+      "key_points": [
+        "A-Book = broker passes your order to real liquidity providers / the market.",
+        "Broker earns from commission + spread markup, not your losses.",
+        "No conflict of interest — your profit doesn't cost them.",
+        "Usually means slightly higher spreads/commission but cleaner execution."
+      ],
+      "caption_en": "📗 A-BOOK BROKERS — no conflict of interest.\n\nAn A-Book broker takes your order and passes it straight through to real liquidity providers (banks/ECN). They make money from commissions and a small spread markup — NOT from your losses.\n\n✅ Your win is not their loss.\n✅ Cleaner, more transparent execution.\n⚠️ Often slightly higher costs as the trade-off.\n\nThis is the model serious traders usually prefer. Tomorrow: B-Book. 👇",
+      "caption_ar": "📗 وسطاء A-Book — لا تضارب في المصالح.\n\nوسيط A-Book يمرّر أمرك مباشرة إلى مزوّدي السيولة الحقيقيين (بنوك/ECN). ربحه من العمولة وهامش بسيط على السبريد، وليس من خسائرك.\n\n✅ ربحك ليس خسارة له.\n✅ تنفيذ أنظف وأكثر شفافية.\n⚠️ غالبًا تكاليف أعلى قليلًا كمقابل.\n\nهذا النموذج يفضّله المتداولون الجادّون. غدًا: نموذج B-Book. 👇",
+      "hashtags": ["#forex", "#abook", "#forexbroker", "#tradingeducation", "#فوركس", "#وسيط_فوركس"],
+      "visual_prompt": "Clean fintech infographic, navy and green palette, a clear pipeline showing a trader's order flowing through to bank towers in the background, sense of transparency and direct connection, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "b-book-broker",
+      "category": "Broker Models",
+      "title_en": "B-Book Brokers Explained",
+      "title_ar": "شرح وسطاء B-Book",
+      "hook": "When your loss is the broker's profit.",
+      "key_points": [
+        "B-Book = broker takes the other side of your trade internally (market maker).",
+        "Your losses can become the broker's revenue — conflict of interest.",
+        "Not automatically a scam: many regulated brokers B-Book small clients.",
+        "Watch for: requotes, slippage only against you, platform freezes on news."
+      ],
+      "caption_en": "📕 B-BOOK BROKERS — the other side of your trade.\n\nA B-Book broker keeps your order in-house instead of sending it to the market. They become the counterparty — meaning your loss can be their gain. ⚠️ That's a built-in conflict of interest.\n\nBut here's the nuance: it's NOT automatically a scam. Most regulated brokers B-Book smaller accounts because it's cheaper to manage.\n\n🚩 Red flags to watch: slippage only ever against you, requotes, \"connection issues\" during news.\n\nKnow your broker's model before you fund. 👇",
+      "caption_ar": "📕 وسطاء B-Book — الطرف الآخر من صفقتك.\n\nوسيط B-Book يحتفظ بأمرك داخليًا بدل إرساله للسوق، فيصبح هو الطرف المقابل — أي أن خسارتك قد تكون ربحه. ⚠️ هذا تضارب مصالح أصيل.\n\nلكن الدقّة مهمة: هذا ليس احتيالًا بالضرورة. أغلب الوسطاء المرخّصين يضعون الحسابات الصغيرة في B-Book لأنه أرخص إدارة.\n\n🚩 علامات تحذيرية: انزلاق دائمًا ضدك فقط، إعادة تسعير، \"مشاكل اتصال\" وقت الأخبار.\n\nاعرف نموذج وسيطك قبل أن تودع أموالك. 👇",
+      "hashtags": ["#forex", "#bbook", "#marketmaker", "#forexbroker", "#فوركس", "#صناع_السوق"],
+      "visual_prompt": "Clean fintech infographic, navy and deep red palette, concept of a trade order being kept inside a glass vault by the broker instead of reaching the market, subtle tension/conflict visual metaphor, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "c-book-broker",
+      "category": "Broker Models",
+      "title_en": "C-Book / Hybrid Brokers",
+      "title_ar": "وسطاء C-Book / النموذج الهجين",
+      "hook": "The model most real brokers actually use.",
+      "key_points": [
+        "C-Book = hybrid: broker dynamically routes orders to A-Book or B-Book.",
+        "Profitable/large traders → A-Book (hedged). Losing/small → B-Book.",
+        "Risk engine decides in real time to manage the broker's exposure.",
+        "Explains why your execution quality can change as your account grows."
+      ],
+      "caption_en": "📘 C-BOOK (HYBRID) — what most brokers really do.\n\nReality check: few brokers are purely A or B. Most run a C-Book — a risk engine that decides, trade by trade, whether to hedge your order to the market (A) or keep it in-house (B).\n\n📈 Consistently profitable / large size? → likely routed A-Book (hedged).\n📉 Small or losing accounts? → often B-Booked.\n\nThis is why some traders notice execution \"gets worse\" right as they start winning. It's not paranoia — it's risk management. Trade clean and you may get promoted to A-Book. 👇",
+      "caption_ar": "📘 النموذج الهجين C-Book — ما يفعله أغلب الوسطاء فعليًا.\n\nالحقيقة: قلّة من الوسطاء A أو B بشكل صافٍ. الأغلب يعتمد C-Book — محرّك مخاطر يقرر لكل صفقة: هل يحوّطها في السوق (A) أم يبقيها داخليًا (B).\n\n📈 رابح ثابت / أحجام كبيرة؟ ← غالبًا A-Book (محوّط).\n📉 حسابات صغيرة أو خاسرة؟ ← غالبًا B-Book.\n\nلهذا يلاحظ بعض المتداولين أن التنفيذ \"يسوء\" بمجرد أن يبدؤوا بالربح. ليست أوهامًا — إنها إدارة مخاطر. 👇",
+      "hashtags": ["#forex", "#cbook", "#hybridbroker", "#forexbroker", "#فوركس", "#ادارة_المخاطر"],
+      "visual_prompt": "Clean fintech infographic, navy with green and red split palette, a smart routing switch / junction sending some order flows to the market and some to an internal vault, balanced hybrid concept, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "regulation-tiers",
+      "category": "Regulation",
+      "title_en": "Forex Regulation Tiers (FCA, ASIC, CySEC...)",
+      "title_ar": "مستويات تنظيم الفوركس (FCA, ASIC, CySEC...)",
+      "hook": "Not all 'regulated' brokers are equally safe.",
+      "key_points": [
+        "Tier-1: FCA (UK), ASIC (Australia), NFA/CFTC (US) — strictest, real protection.",
+        "Tier-2: CySEC (Cyprus), FSCA (South Africa) — solid, EU-passportable.",
+        "Offshore: FSC, SVG, FSA — light-touch, minimal client protection.",
+        "Check the license NUMBER on the regulator's own website, not the broker's."
+      ],
+      "caption_en": "🛡️ \"REGULATED\" isn't one thing — it's tiers.\n\n🥇 Tier-1 — FCA (UK), ASIC (Australia), CFTC/NFA (US): strict capital rules, segregated funds, compensation schemes. Hardest to get, safest for you.\n🥈 Tier-2 — CySEC (Cyprus), FSCA (South Africa): solid oversight, common in the EU.\n🌴 Offshore — SVG, FSC (Mauritius/BVI): light rules, little real protection if things go wrong.\n\n✅ Pro move: take the broker's license number and verify it on the REGULATOR'S official site — not a logo on the broker's homepage.\n\nWhich regulator does your broker hold? 👇",
+      "caption_ar": "🛡️ \"مرخّص\" ليست كلمة واحدة — بل مستويات.\n\n🥇 المستوى الأول — FCA (بريطانيا)، ASIC (أستراليا)، CFTC/NFA (أمريكا): قواعد رأسمال صارمة، فصل أموال العملاء، صناديق تعويض. الأصعب حصولًا والأأمن لك.\n🥈 المستوى الثاني — CySEC (قبرص)، FSCA (جنوب أفريقيا): رقابة جيدة وشائعة في أوروبا.\n🌴 الأوفشور — SVG، FSC: قواعد خفيفة وحماية ضعيفة عند المشاكل.\n\n✅ نصيحة: خذ رقم الترخيص وتحقّق منه على موقع الجهة الرقابية الرسمي — لا من شعار على موقع الوسيط.\n\nأي جهة ترخّص وسيطك؟ 👇",
+      "hashtags": ["#forex", "#fca", "#asic", "#cysec", "#regulation", "#فوركس", "#تنظيم"],
+      "visual_prompt": "Clean fintech infographic, navy and gold palette, three tiers of shields/badges stacked like a podium representing regulatory tiers, sense of trust and security, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "spread-explained",
+      "category": "Trading Costs",
+      "title_en": "What is the Spread?",
+      "title_ar": "ما هو السبريد؟",
+      "hook": "You're down before the trade even moves. Here's why.",
+      "key_points": [
+        "Spread = difference between Bid (sell) and Ask (buy) price.",
+        "It's the broker's primary cost to you on every round trip.",
+        "Tighter on majors/liquid hours, wider on exotics/news/rollover.",
+        "Fixed vs variable spreads: know which your account uses."
+      ],
+      "caption_en": "📉 THE SPREAD — why you open every trade slightly in the red.\n\nThe spread is the gap between the price you can BUY (Ask) and the price you can SELL (Bid). That gap is a cost you pay the broker on every single round trip.\n\n• Majors in liquid hours → tiny spread.\n• Exotics, news, rollover → spread widens fast.\n• Fixed vs variable → know which your account uses before scalping.\n\nA 2-pip spread doesn't sound like much — until you take 500 trades. Costs compound. 👇",
+      "caption_ar": "📉 السبريد — لماذا تفتح كل صفقة بخسارة بسيطة.\n\nالسبريد هو الفرق بين سعر الشراء (Ask) وسعر البيع (Bid). هذا الفرق تكلفة تدفعها للوسيط في كل صفقة ذهابًا وإيابًا.\n\n• الأزواج الرئيسية وقت السيولة ← سبريد ضيّق جدًا.\n• النادرة والأخبار والتبييت ← يتّسع بسرعة.\n• ثابت أم متغيّر ← اعرف نوع حسابك قبل المضاربة السريعة.\n\nسبريد نقطتين يبدو بسيطًا… حتى تنفّذ 500 صفقة. التكاليف تتراكم. 👇",
+      "hashtags": ["#forex", "#spread", "#tradingcosts", "#tradingeducation", "#فوركس", "#السبريد"],
+      "visual_prompt": "Clean fintech infographic, navy and orange palette, a clear visual of bid vs ask prices with the gap between them highlighted as 'the spread', minimal price ladder graphic, premium design, space at top for headline, no text"
+    },
+    {
+      "id": "leverage-margin",
+      "category": "Risk",
+      "title_en": "Leverage vs Margin",
+      "title_ar": "الرافعة المالية مقابل الهامش",
+      "hook": "The tool that makes — and destroys — most accounts.",
+      "key_points": [
+        "Leverage = borrowed buying power (e.g. 1:100 controls $100 with $1).",
+        "Margin = the deposit locked to hold the position.",
+        "Higher leverage magnifies BOTH profit and loss equally.",
+        "Margin call / stop-out happens when equity can't support the position."
+      ],
+      "caption_en": "⚖️ LEVERAGE vs MARGIN — the most misunderstood pair in trading.\n\n🔹 Leverage = borrowed buying power. 1:100 means $1 controls $100.\n🔹 Margin = the chunk of your own money locked to hold that position.\n\nHere's the trap: leverage doesn't increase your edge — it magnifies your size. Same percentage move, bigger dollar swing, both ways. High leverage + no risk plan = margin call → stop-out → blown account.\n\nLeverage is a tool, not a strategy. Respect it. 👇",
+      "caption_ar": "⚖️ الرافعة المالية مقابل الهامش — أكثر مفهومين يُساء فهمهما.\n\n🔹 الرافعة = قوة شرائية مقترضة. 1:100 يعني أن دولارًا واحدًا يتحكّم بـ100.\n🔹 الهامش = جزء من أموالك يُحجز لفتح الصفقة.\n\nالفخ: الرافعة لا تزيد أفضليتك — بل تكبّر حجمك. نفس نسبة الحركة، تذبذب أكبر بالدولار، في الاتجاهين. رافعة عالية بلا خطة مخاطر = نداء هامش ← إغلاق إجباري ← حساب محترق.\n\nالرافعة أداة وليست استراتيجية. احترمها. 👇",
+      "hashtags": ["#forex", "#leverage", "#margin", "#riskmanagement", "#فوركس", "#الرافعة_المالية"],
+      "visual_prompt": "Clean fintech infographic, navy and gold palette, a balance scale weighing a small coin against a large stack to represent leverage magnification, sense of power and danger, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "ecn-stp",
+      "category": "Broker Models",
+      "title_en": "ECN vs STP Accounts",
+      "title_ar": "حسابات ECN مقابل STP",
+      "hook": "Two 'no dealing desk' models — but they're not the same.",
+      "key_points": [
+        "STP = Straight Through Processing: order routed to broker's LP pool.",
+        "ECN = Electronic Communication Network: you trade in a shared pool of banks + traders.",
+        "ECN usually = raw spreads + fixed commission, best for scalpers.",
+        "STP often = marked-up spread, no separate commission."
+      ],
+      "caption_en": "🔌 ECN vs STP — both \"no dealing desk\", but different under the hood.\n\n🟢 STP (Straight Through Processing): your order is routed to the broker's pool of liquidity providers. Usually a marked-up spread, no separate commission.\n🔵 ECN (Electronic Communication Network): you're placed inside a shared network of banks AND other traders. Raw, razor-tight spreads + a fixed commission.\n\nScalper or high-frequency? ECN's raw spreads usually win. Casual swing trader? STP simplicity is fine.\n\nWhich account type are you on? 👇",
+      "caption_ar": "🔌 ECN مقابل STP — كلاهما \"بدون مكتب تداول\" لكنهما مختلفان داخليًا.\n\n🟢 STP: يُمرّر أمرك إلى مجموعة مزوّدي السيولة لدى الوسيط. غالبًا سبريد بهامش وبدون عمولة منفصلة.\n🔵 ECN: تُوضع داخل شبكة مشتركة من البنوك والمتداولين. سبريد خام ضيّق جدًا + عمولة ثابتة.\n\nمضارب سريع؟ سبريد ECN الخام أفضل غالبًا. متداول سوينغ عادي؟ بساطة STP تكفي.\n\nأي نوع حساب تستخدم؟ 👇",
+      "hashtags": ["#forex", "#ecn", "#stp", "#forexbroker", "#فوركس", "#حسابات_التداول"],
+      "visual_prompt": "Clean fintech infographic, navy and electric blue palette, two side-by-side network diagrams contrasting a routed pipeline (STP) versus a shared interconnected node network (ECN), premium minimal tech design, space at top for headline, no text"
+    },
+    {
+      "id": "slippage",
+      "category": "Execution",
+      "title_en": "What is Slippage?",
+      "title_ar": "ما هو الانزلاق السعري؟",
+      "hook": "You clicked 1.1000 but got 1.1004. What happened?",
+      "key_points": [
+        "Slippage = difference between expected and executed price.",
+        "Caused by speed + liquidity gaps, especially around news.",
+        "Can be positive (better) or negative (worse) — should be both, fairly.",
+        "If it's ALWAYS against you, question the broker's execution."
+      ],
+      "caption_en": "⚡ SLIPPAGE — when the price you click isn't the price you get.\n\nYou hit buy at 1.1000 and fill at 1.1004. That 4-pip gap is slippage: the market moved in the milliseconds between your click and execution.\n\n• Worst during news, gaps, and thin liquidity.\n• It should cut BOTH ways — sometimes worse, sometimes better (positive slippage).\n\n🚩 If your slippage is ALWAYS negative, never positive, that's a serious red flag about your broker's execution model. Track it.\n\nSeen one-sided slippage before? 👇",
+      "caption_ar": "⚡ الانزلاق السعري — عندما يختلف سعر النقر عن سعر التنفيذ.\n\nتضغط شراء عند 1.1000 وتُنفّذ عند 1.1004. هذه الفجوة (4 نقاط) هي الانزلاق: تحرّك السوق في أجزاء من الثانية بين نقرتك والتنفيذ.\n\n• الأسوأ وقت الأخبار والفجوات والسيولة الضعيفة.\n• يجب أن يكون في الاتجاهين — أحيانًا أسوأ وأحيانًا أفضل (انزلاق إيجابي).\n\n🚩 إذا كان انزلاقك دائمًا سلبيًا ولا إيجابي أبدًا، فهذه علامة خطيرة على نموذج تنفيذ وسيطك. راقبه.\n\nهل واجهت انزلاقًا أحادي الاتجاه؟ 👇",
+      "hashtags": ["#forex", "#slippage", "#execution", "#tradingeducation", "#فوركس", "#الانزلاق"],
+      "visual_prompt": "Clean fintech infographic, navy and amber palette, a price target marker with an arrow overshooting it to show the gap between clicked and filled price, motion-blur sense of speed, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "order-types",
+      "category": "Mechanics",
+      "title_en": "Market vs Limit vs Stop Orders",
+      "title_ar": "أوامر السوق مقابل الليمت مقابل الستوب",
+      "hook": "Using the wrong order type quietly costs you money.",
+      "key_points": [
+        "Market order: execute now at best available price (fast, risks slippage).",
+        "Limit order: execute only at your price or better (control, may not fill).",
+        "Stop order: triggers a market order once a level is hit (breakouts, stop-loss).",
+        "Stop-limit: combines both — protection against bad fills, risk of no fill."
+      ],
+      "caption_en": "🎯 ORDER TYPES — pick the wrong one and you donate money to the spread.\n\n🟦 Market: fill NOW at best available. Fast, but you accept slippage.\n🟩 Limit: fill only at YOUR price or better. Full control, but it might never fill.\n🟥 Stop: turns into a market order once a level is hit — used for breakouts and stop-losses.\n🟨 Stop-Limit: protection from bad fills, but risks not filling at all.\n\nScalping into news with market orders? You're feeding the spread. Match the order to the moment. 👇",
+      "caption_ar": "🎯 أنواع الأوامر — اختيار الخطأ منها يتبرّع بأموالك للسبريد.\n\n🟦 السوق: تنفيذ الآن بأفضل سعر متاح. سريع لكن تقبل الانزلاق.\n🟩 الليمت: تنفيذ بسعرك أو أفضل فقط. تحكّم كامل لكنه قد لا يُنفّذ.\n🟥 الستوب: يتحوّل لأمر سوق عند بلوغ مستوى — للاختراقات ووقف الخسارة.\n🟨 ستوب-ليمت: حماية من التنفيذ السيّئ لكن قد لا يُنفّذ إطلاقًا.\n\nتضارب على الأخبار بأوامر السوق؟ أنت تغذّي السبريد. طابِق الأمر مع اللحظة. 👇",
+      "hashtags": ["#forex", "#ordertypes", "#tradingbasics", "#tradingeducation", "#فوركس", "#أوامر_التداول"],
+      "visual_prompt": "Clean fintech infographic, navy palette with four accent colors, four labeled order-ticket cards arranged in a grid representing market/limit/stop/stop-limit, premium minimal UI style, space at top for headline, no text"
+    },
+    {
+      "id": "pips-lots",
+      "category": "Mechanics",
+      "title_en": "Pips, Lots & Position Sizing",
+      "title_ar": "النقاط والعقود وحجم الصفقة",
+      "hook": "The math that decides if one bad trade ends your account.",
+      "key_points": [
+        "Pip = smallest standard price move (0.0001 on most pairs).",
+        "Lot sizes: Standard 100k, Mini 10k, Micro 1k units.",
+        "Pip value scales with lot size and the quote currency.",
+        "Position sizing from risk %: risk $ ÷ (stop in pips × pip value) = lots."
+      ],
+      "caption_en": "🧮 PIPS & LOTS — the boring math that keeps you alive.\n\n• Pip = the smallest standard move (0.0001 on most pairs).\n• Lots: Standard = 100,000 units, Mini = 10,000, Micro = 1,000.\n• Pip value scales with your lot size.\n\nThe formula that matters most:\nLot size = (Account risk in $) ÷ (Stop-loss in pips × pip value)\n\nDecide your risk FIRST, then let the math size the trade. Not the other way around. That single habit separates survivors from blown accounts. 👇",
+      "caption_ar": "🧮 النقاط والعقود — الحسبة المملّة التي تُبقيك حيًّا.\n\n• النقطة (pip) = أصغر حركة قياسية (0.0001 في أغلب الأزواج).\n• العقود: قياسي = 100,000 وحدة، ميني = 10,000، مايكرو = 1,000.\n• قيمة النقطة تتغيّر بحجم العقد.\n\nالمعادلة الأهم:\nحجم العقد = (المخاطرة بالدولار) ÷ (وقف الخسارة بالنقاط × قيمة النقطة)\n\nحدّد مخاطرتك أولًا، ثم دع الحساب يحدّد الحجم — لا العكس. هذه العادة وحدها تفصل الناجين عن المحترقين. 👇",
+      "hashtags": ["#forex", "#pips", "#positionsizing", "#riskmanagement", "#فوركس", "#ادارة_رأس_المال"],
+      "visual_prompt": "Clean fintech infographic, navy and teal palette, a calculator and ruler motif measuring stacked coins into position sizes, sense of precision, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "risk-reward",
+      "category": "Risk",
+      "title_en": "Risk-to-Reward & Win Rate",
+      "title_ar": "نسبة المخاطرة للعائد ومعدل الربح",
+      "hook": "You can be right 40% of the time and still get rich.",
+      "key_points": [
+        "R:R = how much you risk vs how much you target.",
+        "With 1:3 R:R you can lose more often than you win and still profit.",
+        "Win rate alone is meaningless without R:R.",
+        "Consistency comes from expectancy, not from being 'right'."
+      ],
+      "caption_en": "📊 RISK-TO-REWARD — why being \"right\" is overrated.\n\nImagine you only win 40% of trades. Sounds like a losing trader, right? Not if your average winner is 3x your average loser.\n\n10 trades, risking $100 to make $300:\n• 4 wins → +$1,200\n• 6 losses → −$600\n• Net → +$600 ✅\n\nWin rate without risk-to-reward is a vanity metric. Chase expectancy, not bragging rights. A good loser with great R:R beats a proud trader with none. 👇",
+      "caption_ar": "📊 المخاطرة للعائد — لماذا \"أن تكون على صواب\" مبالغ في تقديره.\n\nتخيّل أنك تربح 40% فقط من صفقاتك. يبدو خاسرًا، صحيح؟ ليس إن كان متوسط ربحك 3 أضعاف متوسط خسارتك.\n\n10 صفقات، تخاطر بـ100 لتربح 300:\n• 4 رابحة ← +1200\n• 6 خاسرة ← −600\n• الصافي ← +600 ✅\n\nمعدل الربح بلا نسبة مخاطرة/عائد مقياس زائف. لاحِق التوقّع الرياضي لا التباهي. 👇",
+      "hashtags": ["#forex", "#riskreward", "#tradingpsychology", "#riskmanagement", "#فوركس", "#ادارة_المخاطر"],
+      "visual_prompt": "Clean fintech infographic, navy and green/red palette, a balance visual showing a small red risk block against a large green reward block (1:3 ratio), premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "swap-rollover",
+      "category": "Trading Costs",
+      "title_en": "Swap / Overnight Rollover",
+      "title_ar": "السواب / فائدة التبييت",
+      "hook": "The fee that hits while you sleep.",
+      "key_points": [
+        "Swap = interest paid/earned for holding a position overnight.",
+        "Based on the interest-rate difference between the two currencies.",
+        "Can be positive (you earn) or negative (you pay).",
+        "Wednesday rollover is usually charged triple (3x) for the weekend."
+      ],
+      "caption_en": "🌙 SWAP — the cost that charges you while you sleep.\n\nHold a position past the daily rollover (server 5pm New York) and you pay or earn a swap: interest based on the rate difference between the two currencies in the pair.\n\n• Long a high-yield currency vs a low one → you might EARN swap.\n• The reverse → you PAY.\n• Wednesday = triple swap (covers the weekend).\n\nSwing and position traders: swaps quietly eat profits over weeks. Check the swap table before holding long term. 👇",
+      "caption_ar": "🌙 السواب — التكلفة التي تُحتسب وأنت نائم.\n\nإبقاء الصفقة بعد وقت التبييت (5 مساءً بتوقيت نيويورك على السيرفر) يعني دفع أو كسب سواب: فائدة مبنية على فرق سعر الفائدة بين عملتي الزوج.\n\n• شراء عملة عائدها مرتفع مقابل منخفضة ← قد تكسب سواب.\n• العكس ← تدفع.\n• الأربعاء = سواب ثلاثي (يغطّي العطلة).\n\nمتداولو السوينغ والمراكز: السواب يأكل الأرباح بهدوء عبر الأسابيع. راجع جدول السواب قبل الاحتفاظ طويلًا. 👇",
+      "hashtags": ["#forex", "#swap", "#rollover", "#tradingcosts", "#فوركس", "#التبييت"],
+      "visual_prompt": "Clean fintech infographic, navy and indigo night palette, a crescent moon over a clock at rollover time with coins flowing in/out of a position, calm nocturnal premium design, space at top for headline, no text"
+    },
+    {
+      "id": "stop-loss",
+      "category": "Risk",
+      "title_en": "Why You Need a Stop-Loss",
+      "title_ar": "لماذا تحتاج وقف الخسارة؟",
+      "hook": "The order that protects you from yourself.",
+      "key_points": [
+        "Stop-loss = pre-set exit that caps a trade's downside.",
+        "Removes emotion: the decision is made before you're losing.",
+        "Place it at a level that invalidates your trade idea, not a random number.",
+        "No stop = one trade can erase months of gains."
+      ],
+      "caption_en": "🛑 STOP-LOSS — the single habit that keeps you in the game.\n\nA stop-loss is a pre-set exit that caps how much one trade can cost you. Its real job isn't technical — it's psychological. It makes the decision BEFORE you're emotional and hoping.\n\n✅ Place it where your trade idea is proven WRONG, not at a comfortable round number.\n✅ Size your position around it (see our position-sizing post).\n\nTraders don't blow accounts from being wrong. They blow accounts from being wrong WITHOUT a stop. 👇",
+      "caption_ar": "🛑 وقف الخسارة — العادة الوحيدة التي تُبقيك في اللعبة.\n\nوقف الخسارة هو خروج مُحدّد مسبقًا يحدّ خسارة الصفقة. وظيفته الحقيقية نفسية لا فنية: يتّخذ القرار قبل أن تتحكّم بك المشاعر والأمل.\n\n✅ ضعه حيث تثبت فكرة الصفقة خطأها، لا عند رقم مريح.\n✅ احسب حجم الصفقة بناءً عليه.\n\nالمتداولون لا يحرقون حساباتهم لأنهم أخطؤوا، بل لأنهم أخطؤوا بلا وقف خسارة. 👇",
+      "hashtags": ["#forex", "#stoploss", "#riskmanagement", "#tradingdiscipline", "#فوركس", "#وقف_الخسارة"],
+      "visual_prompt": "Clean fintech infographic, navy and red palette, a shield blocking a falling price line at a defined level, sense of protection and discipline, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "market-sessions",
+      "category": "Market Structure",
+      "title_en": "Forex Market Sessions",
+      "title_ar": "جلسات سوق الفوركس",
+      "hook": "Trading the wrong hours is trading on hard mode.",
+      "key_points": [
+        "Sydney → Tokyo → London → New York, 24/5.",
+        "London–New York overlap = highest liquidity and volatility.",
+        "Asian session = ranges, tighter moves, good for range strategies.",
+        "Match your pair and strategy to the active session."
+      ],
+      "caption_en": "🌍 SESSIONS — when you trade matters as much as what you trade.\n\nThe market runs 24/5 across four sessions: Sydney → Tokyo → London → New York.\n\n🔥 London–New York overlap (roughly 1–4pm GMT): the busiest, most liquid, most volatile window — prime time for trend traders.\n😴 Asian session: quieter, range-bound — better for range and mean-reversion plays.\n\nTrading EUR/USD at 3am during dead liquidity? You're on hard mode. Align your strategy with the right session. 👇",
+      "caption_ar": "🌍 الجلسات — توقيت تداولك لا يقل أهمية عن أداة تداولك.\n\nالسوق يعمل 24/5 عبر أربع جلسات: سيدني ← طوكيو ← لندن ← نيويورك.\n\n🔥 تداخل لندن–نيويورك (تقريبًا 1–4 ظهرًا بتوقيت غرينتش): الأكثر نشاطًا وسيولة وتذبذبًا — وقت ذهبي لمتداولي الاتجاه.\n😴 الجلسة الآسيوية: أهدأ وعرضية — أنسب لاستراتيجيات النطاق والارتداد.\n\nتتداول اليورو/دولار الساعة 3 فجرًا في سيولة ميتة؟ أنت على الوضع الصعب. وائِم استراتيجيتك مع الجلسة الصحيحة. 👇",
+      "hashtags": ["#forex", "#tradingsessions", "#london", "#newyork", "#فوركس", "#جلسات_التداول"],
+      "visual_prompt": "Clean fintech infographic, navy palette with a world map and four glowing time-zone arcs for Sydney/Tokyo/London/New York sessions, overlap zone highlighted in gold, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "scam-broker-flags",
+      "category": "Regulation",
+      "title_en": "7 Red Flags of a Scam Broker",
+      "title_ar": "7 علامات على وسيط محتال",
+      "hook": "Spot the trap before you deposit.",
+      "key_points": [
+        "Unrealistic bonuses / guaranteed profits.",
+        "No verifiable regulation or fake license numbers.",
+        "Withdrawal delays, extra 'fees', or moving goalposts.",
+        "Aggressive sales calls pushing you to deposit more."
+      ],
+      "caption_en": "🚩 7 RED FLAGS OF A SCAM BROKER — save this before you fund any account.\n\n1️⃣ \"Guaranteed profits\" or no-risk promises.\n2️⃣ Bonuses that lock your withdrawals.\n3️⃣ No regulation — or a license number that doesn't exist on the regulator's site.\n4️⃣ Withdrawal delays and surprise \"fees\".\n5️⃣ Pushy account managers urging bigger deposits.\n6️⃣ Slippage and requotes only ever against you.\n7️⃣ Pressure to trade with \"signals\" they provide.\n\nIf you see 2+ of these, walk away. Your capital's safety comes before any spread. 👇",
+      "caption_ar": "🚩 7 علامات على وسيط محتال — احفظ المنشور قبل أن تودع في أي حساب.\n\n1️⃣ \"أرباح مضمونة\" أو وعود بلا مخاطر.\n2️⃣ مكافآت تجمّد سحوباتك.\n3️⃣ بلا ترخيص — أو رقم ترخيص لا وجود له على موقع الجهة الرقابية.\n4️⃣ تأخير السحب ورسوم مفاجئة.\n5️⃣ مدراء حسابات ملحّون يدفعونك لإيداع أكثر.\n6️⃣ انزلاق وإعادة تسعير ضدك دائمًا.\n7️⃣ ضغط للتداول بـ\"توصيات\" منهم.\n\nإذا رأيت اثنتين أو أكثر، ابتعد. سلامة رأس مالك قبل أي سبريد. 👇",
+      "hashtags": ["#forex", "#scambroker", "#forexscam", "#regulation", "#فوركس", "#نصب_فوركس"],
+      "visual_prompt": "Clean fintech infographic, navy and warning-red palette, a warning sign over a glossy but cracked broker storefront, sense of caution, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "trading-psychology",
+      "category": "Psychology",
+      "title_en": "Fear, Greed & Discipline",
+      "title_ar": "الخوف والطمع والانضباط",
+      "hook": "Your biggest opponent isn't the market. It's you.",
+      "key_points": [
+        "Fear → cutting winners early, skipping valid setups.",
+        "Greed → oversizing, revenge trading, moving stops.",
+        "A written plan converts emotion into rules.",
+        "Process goals beat profit goals for consistency."
+      ],
+      "caption_en": "🧠 PSYCHOLOGY — the market isn't your real opponent. You are.\n\n😨 Fear makes you cut winners early and skip A+ setups.\n🤑 Greed makes you oversize, chase, revenge-trade, and drag your stop \"just a little\".\n\nThe fix isn't motivation — it's a written plan that turns feelings into rules you follow no matter what. Judge yourself on PROCESS (did I follow my plan?), not on a single trade's profit.\n\nGreat traders aren't fearless. They're disciplined. 👇",
+      "caption_ar": "🧠 علم النفس — السوق ليس خصمك الحقيقي. أنت هو.\n\n😨 الخوف يجعلك تقتل الصفقات الرابحة مبكرًا وتتجاهل أفضل الفرص.\n🤑 الطمع يجعلك تكبّر الحجم وتطارد وتنتقم وتسحب وقف الخسارة \"قليلًا فقط\".\n\nالحل ليس الحماس، بل خطة مكتوبة تحوّل المشاعر إلى قواعد تتبعها مهما حدث. قيّم نفسك على الالتزام بالخطة لا على ربح صفقة واحدة.\n\nالمتداولون العظماء ليسوا بلا خوف، بل منضبطون. 👇",
+      "hashtags": ["#forex", "#tradingpsychology", "#discipline", "#mindset", "#فوركس", "#سيكولوجية_التداول"],
+      "visual_prompt": "Clean fintech infographic, navy palette with subtle red and green, a human head silhouette split between a calm disciplined side and a chaotic emotional side, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "demo-to-live",
+      "category": "Getting Started",
+      "title_en": "Demo to Live: Crossing the Gap",
+      "title_ar": "من الديمو إلى الحقيقي: عبور الفجوة",
+      "hook": "Why profitable demo traders lose real money.",
+      "key_points": [
+        "Demo removes emotion because nothing real is at stake.",
+        "Live introduces fear, greed, and execution differences.",
+        "Start live with tiny size to train the psychology, not the strategy.",
+        "Graduate position size only after consistent live results."
+      ],
+      "caption_en": "🎮➡️💵 DEMO TO LIVE — why your strategy \"stopped working\" with real money.\n\nIt didn't stop working. YOU changed. On demo there's no fear because there's nothing to lose. The moment real money is on the line, fear and greed rewire every decision.\n\n✅ Go live with micro lots — embarrassingly small. The goal is to train your emotions, not to get rich this month.\n✅ Scale size up only after weeks of consistent, rule-following results.\n\nMaster the psychology at $5 risk before you ever risk $500. 👇",
+      "caption_ar": "🎮➡️💵 من الديمو إلى الحقيقي — لماذا \"توقّفت\" استراتيجيتك مع المال الحقيقي.\n\nهي لم تتوقّف. أنت من تغيّر. في الديمو لا خوف لأنه لا شيء حقيقي على المحك. لحظة دخول مال حقيقي، يعيد الخوف والطمع برمجة كل قرار.\n\n✅ ابدأ الحقيقي بعقود مايكرو — صغيرة بشكل محرج. الهدف تدريب مشاعرك لا الثراء هذا الشهر.\n✅ كبّر الحجم فقط بعد أسابيع من نتائج ثابتة ملتزمة بالقواعد.\n\nأتقِن النفسية على مخاطرة 5 دولارات قبل أن تخاطر بـ500. 👇",
+      "hashtags": ["#forex", "#demotrading", "#livetrading", "#beginners", "#فوركس", "#تعلم_التداول"],
+      "visual_prompt": "Clean fintech infographic, navy and gold palette, a bridge crossing a gap between a 'practice' platform island and a 'real money' island, sense of transition, premium minimal design, space at top for headline, no text"
+    },
+    {
+      "id": "economic-calendar",
+      "category": "Fundamentals",
+      "title_en": "Trading the Economic Calendar",
+      "title_ar": "التداول وفق المفكرة الاقتصادية",
+      "hook": "High-impact news can erase a perfect chart in seconds.",
+      "key_points": [
+        "Key events: interest rates, NFP, CPI, GDP, central bank speeches.",
+        "Volatility + spread widening spike around releases.",
+        "Many traders flatten positions or avoid trading the minutes around news.",
+        "Know the time zone and 'impact' rating of each event."
+      ],
+      "caption_en": "📅 ECONOMIC CALENDAR — the schedule that overrides your chart.\n\nA flawless technical setup means nothing if NFP drops 30 seconds later. High-impact events — interest rate decisions, NFP, CPI, GDP, central-bank speeches — can move price violently and blow out spreads.\n\n✅ Check the calendar BEFORE every session.\n✅ Note the impact rating and the exact time (mind your time zone — yours is Amman/GMT+3).\n✅ Many pros simply stand aside in the minutes around red-folder news.\n\nDo you trade the news or dodge it? 👇",
+      "caption_ar": "📅 المفكرة الاقتصادية — الجدول الذي يتجاوز الرسم البياني.\n\nأفضل إعداد فني لا يساوي شيئًا إذا صدر تقرير الوظائف بعد 30 ثانية. الأحداث عالية التأثير — قرارات الفائدة، الوظائف غير الزراعية، التضخم، الناتج المحلي، خطابات البنوك المركزية — تحرّك السعر بعنف وتوسّع السبريد.\n\n✅ راجع المفكرة قبل كل جلسة.\n✅ لاحظ درجة التأثير والوقت الدقيق (انتبه لتوقيتك: عمّان غرينتش+3).\n✅ كثير من المحترفين يبتعدون في دقائق الأخبار الحمراء.\n\nهل تتداول الأخبار أم تتجنّبها؟ 👇",
+      "hashtags": ["#forex", "#economiccalendar", "#nfp", "#fundamentals", "#فوركس", "#المفكرة_الاقتصادية"],
+      "visual_prompt": "Clean fintech infographic, navy and gold palette, a calendar with a high-impact red event marker beside a volatile candlestick spike, premium minimal design, space at top for headline, no text"
+    }
+  ]
+}
