@@ -1,0 +1,56 @@
+==============================================================================
+ INSTAGRAM VOICE NOTE DOWNLOADER  -  Bookmarklet
+==============================================================================
+
+WHAT IT DOES
+------------
+When you have an Instagram DM conversation open in your browser, click this
+bookmarklet. It walks the page's React fiber tree to find every voice clip
+("audioclip") URL in the thread and downloads each one to your Downloads
+folder. Drop those files into the same folder as transcribe_voice_notes.py
+(or point --folder at your Downloads) and run the transcriber.
+
+Files arrive named like  audioclip-<id>.mp4  /  audioclip-<id>.ogg ,
+which is exactly what transcribe_voice_notes.py looks for.
+
+
+HOW TO INSTALL (one time)
+-------------------------
+1. Show your browser's bookmarks bar:
+      Chrome/Edge:  Ctrl+Shift+B
+      Firefox:      Ctrl+Shift+B
+2. Right-click the bookmarks bar  ->  "Add page" / "Add bookmark...".
+3. Name it:   IG Voice Downloader
+4. In the URL / Address / Location field, paste the ENTIRE line below
+   (the whole thing, starting with  javascript:  ).
+5. Save.
+
+
+HOW TO USE
+----------
+1. Open instagram.com in your browser and open the DM conversation.
+2. SCROLL UP through the chat so the voice notes you want actually load
+   (Instagram only keeps loaded messages in the page).
+3. Click the "IG Voice Downloader" bookmark.
+4. A small count appears; the audio files download to your Downloads folder.
+5. Move them next to transcribe_voice_notes.py and run the transcriber.
+
+If your browser asks whether to allow multiple downloads, click "Allow".
+
+
+==============================================================================
+ THE BOOKMARKLET  (copy this entire single line)
+==============================================================================
+
+javascript:(function(){try{var urls=new Set();function vals(o){if(o&&typeof o==='object'){return Object.values(o);}return [];}function scan(node){if(!node)return;var seen=new WeakSet();var stack=[node];var steps=0;while(stack.length&&steps<500000){steps++;var cur=stack.pop();if(!cur||typeof cur!=='object'||seen.has(cur))continue;seen.add(cur);for(var k in cur){var v;try{v=cur[k];}catch(e){continue;}if(typeof v==='string'){if(v.indexOf('audioclip')!==-1&&v.indexOf('http')===0){urls.add(v.split('&bytestart')[0]);}}else if(v&&typeof v==='object'){stack.push(v);}}}}var all=document.querySelectorAll('*');for(var i=0;i<all.length;i++){var el=all[i];for(var key in el){if(key.indexOf('__reactFiber$')===0||key.indexOf('__reactInternalInstance$')===0){try{scan(el[key]);}catch(e){}}}}document.querySelectorAll('audio[src],source[src]').forEach(function(a){var s=a.src||a.getAttribute('src');if(s&&s.indexOf('audioclip')!==-1)urls.add(s);});var list=Array.from(urls);if(!list.length){alert('No voice notes found. Scroll up through the chat to load them, then click again.');return;}var n=0;list.forEach(function(u,idx){setTimeout(function(){var ext=u.indexOf('.ogg')!==-1?'ogg':'mp4';var a=document.createElement('a');a.href=u;a.download='audioclip-'+Date.now()+'-'+idx+'.'+ext;document.body.appendChild(a);a.click();document.body.removeChild(a);},idx*600);n++;});alert('Found '+list.length+' voice note(s). Downloading to your Downloads folder...');}catch(err){alert('Error: '+err);}})();
+
+
+==============================================================================
+ NOTES
+------
+- This runs entirely in your browser; nothing is uploaded anywhere.
+- Instagram media URLs are time-limited, so download soon after they load.
+- Some clips are served as .mp4, some as .ogg; the transcriber handles both.
+- If a download opens in a new tab instead of saving, right-click the audio
+  player -> "Save audio as..." and save it with an "audioclip-" name.
+==============================================================================
