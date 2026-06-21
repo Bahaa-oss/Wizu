@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.voice_transcriber_state.json
+voice_transcripts.txt
+*.ogg
+*.opus
+*.mp4
+WhatsApp Ptt *
+WhatsApp Audio *
+audioclip-*
